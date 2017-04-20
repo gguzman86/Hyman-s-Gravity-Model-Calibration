@@ -4,14 +4,6 @@ Cij=matrix(c(5, 10, 18, 13, 5, 15, 20, 16, 6), nrow=3, ncol=3, byrow=TRUE)
 Tij=matrix(c(148,79,173,99,82,169,53,39,158), nrow=3, ncol=3, byrow=TRUE)
 
 
-library("ImportExport")
-library("RODBC")
-
-
-
-data <-access_import('C:/Users/qproject-hp/Desktop/STATISTICS/Distribution Model/Eod Santiago 2001 Hogares con factores Censo 2002.mdb')
-
-odbcDriverConnect("Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=C:/Users/qproject-hp/Desktop/STATISTICS/Distribution Model/Eod Santiago 2001 Hogares con factores Censo 2002.mdb")
 
 ##################Deterrence Function###########################
 deterrence_function <- function(Cij, Beta){
