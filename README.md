@@ -1,1 +1,1 @@
-A very simple example of trip distribution calibration through entropic algorithms, coded in R. Even though the code is quite simple, it can be easily expanded to a larger matrix. 
+Examples of entropic trip distribution calibration algorithms coded in R. Even though the code has an example of a (3x3) matrix, it can be easily expanded to a larger one. 
