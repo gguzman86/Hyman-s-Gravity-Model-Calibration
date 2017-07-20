@@ -190,9 +190,9 @@ Hyman<-function(Production, Attraction, Cij, Tij){
 }
 ####################END##########################################
 
-################DeGrange calibration######################################
+################Fernandez calibration######################################
 
-DG_Calibration <- function(Production, Attraction, Cij, Tij){
+Fernandez_Calibration <- function(Production, Attraction, Cij, Tij){
   Yij=matrix(0,nrow(Tij),ncol(Tij))
   for (j in 1:nrow(Yij)){
     for (i in 1:nrow(Yij)){
@@ -256,11 +256,11 @@ DG_Calibration <- function(Production, Attraction, Cij, Tij){
 
 ####################END##########################################
 
-DG_Calibrated_Beta<-DG_Calibration(Production, Attraction, Cij, Tij)
-DG_New_Beta=Calibrated_Beta$Beta
-DG_New_Beta
-DG_New_ro=Calibrated_Beta$ro
-DG_New_ro
+Fernandez_Calibrated_Beta<-Fernandez_Calibration(Production, Attraction, Cij, Tij)
+Fernandez_New_Beta=Calibrated_Beta$Beta
+Fernandez_New_Beta
+Fernandez_New_ro=Calibrated_Beta$ro
+Fernandez_New_ro
 New_Ai=Calibrated_Beta$A
 New_Ai
 New_Bj=Calibrated_Beta$B
