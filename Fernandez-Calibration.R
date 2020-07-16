@@ -257,11 +257,11 @@ Fernandez_Calibration <- function(Production, Attraction, Cij, Tij){
 ####################END##########################################
 
 Fernandez_Calibrated_Beta<-Fernandez_Calibration(Production, Attraction, Cij, Tij)
-Fernandez_New_Beta=Calibrated_Beta$Beta
+Fernandez_New_Beta=Fernandez_Calibrated_Beta$Beta
 Fernandez_New_Beta
-Fernandez_New_ro=Calibrated_Beta$ro
+Fernandez_New_ro=Fernandez_Calibrated_Beta$ro
 Fernandez_New_ro
-New_Ai=Calibrated_Beta$A
+New_Ai=Fernandez_Calibrated_Beta$A
 New_Ai
-New_Bj=Calibrated_Beta$B
+New_Bj=Fernandez_Calibrated_Beta$B
 New_Bj
